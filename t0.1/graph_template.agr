@@ -1,0 +1,54 @@
+with GRAPH
+	frame linewidth 3.0
+	
+	READ  "DATA1.dat"
+	RUNAVG(s0, 100)
+	kill s0
+	s1.X = s1.X/50
+	s1 line color 1
+
+	READ  "DATA2.dat"
+	RUNAVG(s0, 100)
+	kill s0
+	s2.X = s2.x/50
+	s2 line color 2
+
+	world xmin 0
+	world xmax 150
+	world ymin -0.5
+	world ymax 2.5
+
+	xaxis  tick on
+	xaxis  tick major 50
+	xaxis  tick minor ticks 1
+	xaxis  tick default 6
+	xaxis  tick place rounded true
+	xaxis  tick in
+	xaxis  tick major size 1.000000
+	xaxis  tick major color 1
+	xaxis  tick major linewidth 3.0
+	xaxis  tick major linestyle 1
+	xaxis  tick major grid off
+	xaxis  tick minor color 1
+	xaxis  tick minor linewidth 3.0
+	xaxis  tick minor linestyle 1
+	xaxis  tick minor grid off
+	xaxis  tick minor size 0.500000
+
+	yaxis  tick on
+	yaxis  tick major 0.5
+	yaxis  tick minor ticks 1
+	yaxis  tick default 6
+	yaxis  tick place rounded true
+	yaxis  tick in
+	yaxis  tick major size 1.000000
+	yaxis  tick major color 1
+	yaxis  tick major linewidth 3.0
+	yaxis  tick major linestyle 1
+	yaxis  tick major grid off
+	yaxis  tick minor color 1
+	yaxis  tick minor linewidth 3.0
+	yaxis  tick minor linestyle 1
+	yaxis  tick minor grid off
+	yaxis  tick minor size 0.500000
+

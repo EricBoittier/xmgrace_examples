@@ -1,0 +1,190 @@
+ # make a panel plot
+ arrange (4,4,.1,0,0,ON,ON,ON)
+
+with string
+    string on
+    string loctype view
+    string 0.6, 0.05
+    string color 1
+    string rot 0
+    string font 6
+    string just 0
+    string char size 1.000000
+    string def "Time (ns)"
+with string
+    string on
+    string loctype view
+    string 0.05, 0.4
+    string color 1
+    string rot 90
+    string font 6
+    string just 0
+    string char size 1.000000
+    string def "MA(\xdl\f{})"
+with string
+    string on
+    string loctype view
+    string 0.266, 0.87
+    string color 1
+    string rot 0
+    string font 6
+    string just 0
+    string char size 1.000000
+    string def "Val1\xa\f{}"
+with string
+    string on
+    string loctype view
+    string 0.266, 0.68137254902
+    string color 1
+    string rot 0
+    string font 6
+    string just 0
+    string char size 1.000000
+    string def "Pro37\xa\f{}"
+with string
+    string on
+    string loctype view
+    string 0.266, 0.425
+    string color 1
+    string rot 0
+    string font 6
+    string just 0
+    string char size 1.000000
+    string def "Thr38\xa\f{}"
+with string
+    string on
+    string loctype view
+    string 0.541421568627, 0.58637254902
+    string color 1
+    string rot 0
+    string font 6
+    string just 0
+    string char size 1.000000
+    string def "Tyr42\xa"
+with string
+    string on
+    string loctype view
+    string 0.548774509804, 0.466764705882
+    string color 1
+    string rot 0
+    string font 6
+    string just 0
+    string char size 1.000000
+    string def "Pro44\xa"
+with string
+    string on
+    string loctype view
+    string 0.55, 0.282696078431
+    string color 1
+    string rot 0
+    string font 6
+    string just 0
+    string char size 1.000000
+    string def "Thr134\xa"
+with string
+    string on
+    string loctype view
+    string 0.820833333333, 0.885784313725
+    string color 1
+    string rot 0
+    string font 6
+    string just 0
+    string char size 1.000000
+    string def "Tyr140\xa"
+with string
+    string on
+    string loctype view
+    string 0.266, 0.29
+    string color 1
+    string rot 0
+    string font 6
+    string just 0
+    string char size 1.000000
+    string def "Lys40\xa"
+with string
+    string on
+    string loctype view
+    string 0.845098039216, 0.490196078432
+    string color 1
+    string rot 0
+    string font 6
+    string just 0
+    string char size 1.000000
+    string def "Val1\xb"
+with string
+    string on
+    string loctype view
+    string 0.831617647059, 0.296568627451
+    string color 1
+    string rot 0
+    string font 6
+    string just 0
+    string char size 1.000000
+    string def "Trp37\xb"
+with string
+    string on
+    string loctype view
+    string 1.07058823529, 0.872549019608
+    string color 1
+    string rot 0
+    string font 6
+    string just 0
+    string char size 1.000000
+    string def "Pro100\xb"
+with string
+    string on
+    string loctype view
+    string 1.10490196078, 0.66818627451
+    string color 1
+    string rot 0
+    string font 6
+    string just 0
+    string char size 1.000000
+    string def "Glu101\xb"
+with string
+    string on
+    string loctype view
+    string 1.08284313725, 0.474264705883
+    string color 1
+    string rot 0
+    string font 6
+    string just 0
+    string char size 1.000000
+    string def "Asn139\xb"
+with string
+    string on
+    string loctype view
+    string 1.08161764706, 0.292892156863
+    string color 1
+    string rot 0
+    string font 6
+    string just 0
+    string char size 1.000000
+    string def "Tyr145\xb"
+with string
+    string on
+    string loctype view
+    string 0.553990196078, 0.89068627451
+    string color 1
+    string rot 0
+    string font 6
+    string just 0
+    string char size 1.000000
+    string def "Thr41\xa\f{}"
+with string
+    string on
+    string loctype view
+    string 0.846882352941, 0.699509803922
+    string color 1
+    string rot 0
+    string font 6
+    string just 0
+    string char size 1.000000
+    string def "Arg141\xa\f{}"
+
+#
+#
+#
+#  Plotting
+#
+#

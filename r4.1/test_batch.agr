@@ -1,0 +1,88 @@
+
+# script to plot in xmgrace by command line
+#
+# ANJI BABU KAPAKAYALA, IIT KANPUR, INDIA
+#
+# arrange (1,1,.1,.6,.6,ON,ON,ON) this is for multi graph ploting
+#FOCUS graph
+ FOCUS G0
+#==================INPUT DATA===================
+READ BLOCK "file_1"  
+block xy "1:2"
+READ block "file_2" 
+block xy "1:2"
+READ block "file_3" 
+block xy "1:2"
+READ block "file_4" 
+block xy "1:2"
+READ BLOCK "file_5"  
+block xy "1:2"
+#
+s0 line color 1
+s0 linewidth 2.5
+S0 legend "FILE1"
+#
+s1 line color 2
+s1 linewidth 2.5
+S1 legend "FILE2"
+#
+s2 line color 3
+s2 linewidth 2.5
+S2  legend "FILE3"
+#
+s3 line color 4
+s3 linewidth 2.5
+S3 legend "FILE4"
+#
+s4 line color 5
+s4 linewidth 2.5
+S4 legend "FILE5"
+#
+# you can plot any number of files
+#=================================================
+#TITLE of the plot
+title "Title of plot"
+#WORLD xmin, ymin, xmax, ymax (for setting axies range)
+ WORLD 0.95, 0.0, 1.85, 40.0
+#yaxis ticklabel char size 0.800000  adjest the font size of yaxix label
+ xaxis  bar linestyle 1
+ xaxis  bar linewidth 2.5
+ xaxis LABEL CHAR SIZE 1.7
+ xaxis TICKLABEL CHAR SIZE 1.2
+ yaxis  bar linestyle 1
+ yaxis  bar linewidth 2.5
+ yaxis LABEL CHAR SIZE 1.7
+ yaxis TICKLABEL CHAR SIZE 1.2
+ xaxis label "write XLABEL HERE"
+ yaxis label "WRITE Y LABEL HERE"
+ yaxis tick major 5
+ yaxis tick minor 1
+ xaxis tick major 0.1
+ xaxis tick minor 0.05
+ xaxis tick linewidth 2
+ yaxis tick linewidth 2
+ LEGEND FONT 0
+ LEGEND LINEWIDTH 1
+ LEGEND BOX LINEWIDTH 2
+ legend 0.90, 0.84
+#LEGEND COLOR integer
+#AUTOSCALE
+# KILL s0 (to kill any plot)
+#=====================OUTPUT(PNG)====================
+# PRINT TO "probs_5_3-6.png"
+# HARDCOPY DEVICE "PNG"
+# PAGE SIZE 2560, 2048
+# DEVICE "PNG" FONT ANTIALIASING on
+# DEVICE "PNG" OP "transparent:on"
+# DEVICE "PNG" OP "compression:9"
+# PRINT
+#===============EPS FORMAT===========================
+#PRINT TO "prob_5_3-6.eps"
+#DEVICE "EPS" OP "level2"
+#PRINT
+#=========USAGE======================================================================
+#gracebat -batch grace_plot.bfile -nosafe -hardcopy -printfile "fig.png" -hdevice PNG
+#====================================================================================
+#              Written by ANJI BABU KAPAKAYALA                                       #
+#                     IIT KANPUR, INDIA                                              #
+#====================================================================================#
